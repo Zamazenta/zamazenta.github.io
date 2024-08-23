@@ -1,0 +1,27 @@
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>NOTE:	This tool calculates total toe and gives an estimated per-wheel toe.
+		The per-wheel toe assumes both wheels have equal toe angles.
+		
+<input type="number" id="front" min="0" max="5000"> Distance between front of the wheels
+<input type="number" id="rear" min="0" max="5000"> Distance between rear of the wheels
+<input type="number" id="distance" min="0" max="5000"> Distance between front and rear measurement locations
+<button id="calc" type="button" onclick="calc()">Calculate</button>
+<div id="result"> </div><div id="assumption"> </div>
+How to use:
+		
+1. 	Take 2 distance measurements between the opposite wheels.
+	One towards the front side, and one towards the rear side.
+	This does not mean the front and rear wheels themselves,
+	but rather the front/rear side of a singular wheel.
+	The measurement does not have to be exactly at the ends
+	of the wheels.
+		
+2.	Measure the distance between the front and rear points.
+
+3.	Enter the measurements above, and hit calculate.
+<img src="tut1.jpg" width="400" height="335">
+<script src="index.js"></script>
+</body>
